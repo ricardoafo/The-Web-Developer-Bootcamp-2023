@@ -9,17 +9,16 @@
   <body>
     <h1>Forms Demo</h1>
     <form action="/tacos">
-      <div>
-        <div>
+      <p>
+        <p>
           <label for="username">Enter your username: </label>
           <input id="username" type="text" placeholder="username" />
-        </div>
-        <div>
+        </p>
+        <p>
           <label for="password">Enter your password: </label>
           <input id="password" type="password" placeholder="XXXXXXX" />
-        </div>
-      </div>
-      <div>
+        </p>
+      </p>
         <p>
           <label for="color">Enter a color: </label>
           <input id="color" type="color" />
@@ -36,7 +35,54 @@
           <label for="checkbox">Click the checkbox</label>
           <input id="checkbox" type="checkbox" />
         </p>
-      </div>
+        <button>Submit</button>
+        <hr>
+        <h2>Reddit search</h2>
+    </form>
+    <!-- https://www.reddit.com/search/?q=dog -->
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q">
+        <button>Summit</button>
+    </form>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label id="agree">I agree to everything</label>
+        <p>
+            <label id="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label id="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label id="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please select a meal type</label>
+            <select name="meal" id="meal">
+            <option value="fish">Fish</option>
+            <option value="meat">Meat</option>
+            <option value="chicken">Chicken</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" min="1" max="10" name="cheese_level">
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/validationForm">
+        <label for="first">Enter your first name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required minlength="5" maxlength="20">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <button>Submit</button>
     </form>
   </body>
 </html>
