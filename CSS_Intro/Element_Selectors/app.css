@@ -1,0 +1,69 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: papayawhip;
+}
+
+button {
+    background-color: #669BBC;
+    font-size: 30px;
+}
+
+h1, h2 {
+    color: #003049;
+}
+
+#signup {
+    background-color: #780000;
+    color: aliceblue;
+}
+
+span {
+    color: #669BBC;
+}
+
+.tag {
+    background-color: #780000;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.post span a {
+    color: #669BBC;
+}
+
+footer a {
+    color: red;
+}
+
+h2 + button {
+    background-color: aqua;
+}
+
+footer > a {
+    color: aquamarine;
+}
+
+input[type="password"] {
+    color: #780000;
+}
+
+.post button:hover {
+    background-color: #003049;
+    color: aliceblue;
+}
+
+.post button:active {
+    background-color: green;
+
+}
+
+.post h2::first-letter {
+    font-size: 100px ;
+} 
+
+p::first-line {
+    color: #780000;
+}
