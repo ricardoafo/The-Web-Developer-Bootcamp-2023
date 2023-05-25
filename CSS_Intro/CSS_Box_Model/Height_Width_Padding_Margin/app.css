@@ -1,3 +1,6 @@
+body {
+    margin: 0px;
+}
 div {
     width: 200px;
     height: 200px;
@@ -5,8 +8,16 @@ div {
 }
 
 h1 {
+    padding-top: 50px;
+    padding-left: 100px;
     background-color: blanchedalmond;
-    width: 100px;
+    width: 200px;
+    margin: 0px;
+}
+
+h1 span {
+    margin-left: 30px;
+    margin-top: 10px;
 }
 
 #one {
@@ -15,9 +26,12 @@ h1 {
     border-color: black;
     border-style: solid;
     box-sizing: border-box;
+    margin: 100px;
 }
 
 #two {
+
+    padding-right: 50px;
     background-color: burlywood;
     border-width: 3px;
     border-color: rgb(184, 8, 8);
@@ -31,4 +45,8 @@ h1 {
     border: 4px dotted orange;
     box-sizing: border-box;
     border-radius: 10%;
+}
+
+button {
+    padding: 10px 20px 30px 40px;  
 }
