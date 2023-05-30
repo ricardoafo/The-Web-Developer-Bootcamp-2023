@@ -1,0 +1,11 @@
+section {
+  background-color: aqua;
+  width: 800px;
+  height: 800px;
+}
+
+div {
+  background-color: blueviolet;
+  width: 50%;
+  height: 50%;
+}
